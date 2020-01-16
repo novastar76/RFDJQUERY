@@ -9,13 +9,16 @@
   <body>
     <script>
       $(document).ready(function() {
-        $("span").click(function() {
-          $(this).hide();
+        $("#cacher").click(function() {
+          $("p").hide();
+        });
+        $("#afficher").click(function() {
+          $("p").show();
         })
       });
     </script>
-    <p><span>oui</span>Clique-moi grand fou !</p>
-    <p><span>oui</span>Clique-moi encore !</p>
-    <p><span>oui</span>J'en peux plus, clique owi!</p>
+    <p>Je suis Michel</p>
+    <button id="afficher">Afficher</button>
+    <button id="cacher">Cacher</button>
   </body>
 </html>
